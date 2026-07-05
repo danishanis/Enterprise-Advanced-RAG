@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv --version)",
+      "Bash(uv tree *)",
+      "Bash(sw_vers)",
+      "Bash(curl -s https://pypi.org/pypi/torch/json)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

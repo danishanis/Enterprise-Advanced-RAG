@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp pyproject.toml /tmp/pyproject.toml.bak)",
+      "Bash(python3 -)",
+      "Bash(uv lock *)"
+    ]
+  }
+}
