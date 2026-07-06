@@ -65,7 +65,7 @@ sync-mac-intel:
 	echo "Linked conda-forge torch/torchvision into .venv"
 
 seed:
-	$(UV_RUN) python scripts/seed_db.py
+	PYTHONPATH=. $(UV_RUN) python scripts/seed_db.py
 
 seed-docs:
 	$(UV_RUN) python -c "from scripts.seed_db import seed_docs; seed_docs()"
@@ -109,7 +109,7 @@ eval-diff:
 	  echo "Need at least one _naive.json and one _all.json in eval/results/"
 
 validate:
-	$(UV_RUN) python scripts/validate_goldens.py
+	PYTHONPATH=. $(UV_RUN) python scripts/validate_goldens.py
 
 
 test:
